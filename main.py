@@ -41,7 +41,7 @@ def format_message(message_dictionary, add_name):  # FORMAT: <author>:   <messag
     return formatted_message_string
 
 
-print(' Messages: \n')
+print('\n Messages:')
 for message in chat:
     chat.print_formatted(message)
 
