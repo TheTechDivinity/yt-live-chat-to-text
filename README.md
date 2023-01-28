@@ -25,7 +25,6 @@ convenient or you can run it through your own Python IDE
 which is better for when you want to add it to a larger project
 
 Steps. Instructions
-Installation:
 
 .Bat Method:
 1. Replace PATH in run_main.bat with the path to your Python.exe
@@ -37,7 +36,8 @@ IDE Method:
 2. Install chat_downloader from Pip
 3. Run it inside the IDE
 
-Use:
+How to use:
+--------------------------------------------------------------------------
 After the script starts running just paste the URL to the livestream
 and let the program run. It'll automatically download each message
 into their respective .txt files, updating every few seconds.
