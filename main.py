@@ -25,14 +25,14 @@ chat = ChatDownloader().get_chat(url)
 
 output_file_name = url.replace('https://www.youtube.com/watch?v=', '') + '+' + str(randint(-999999, 999999)) + '.txt'
 
-name_message_output_file = 'outputs/name-message/name-message+' + output_file_name
+names_and_messages_output_file = 'outputs/name-message/name-message+' + output_file_name
 message_only_output_file = 'outputs/message-only/message-only+' + output_file_name
 
-print(' Name & Message Output File: ' + name_message_output_file)
+print(' Name & Message Output File: ' + names_and_messages_output_file)
 print(' Message Only Output File: ' + message_only_output_file)
 
 
-def format_message(message_dictionary, add_name):  # FORMAT: <author>:   <message>
+def format_message(message_dictionary, add_name):  # FORMAT: <author>:   <message> or <message>
     formatted_message_string = message_dictionary['message']
 
     if add_name:
@@ -45,8 +45,8 @@ print(' Messages: \n')
 for message in chat:
     chat.print_formatted(message)
 
-    with open(message_only_output, 'a', encoding="utf-8") as messages_only_file:
+    with open(message_only_output_file, 'a', encoding="utf-8") as messages_only_file:
         messages_only_file.write(format_message(message, False) + '\n')
 
-    with open(name_message_output, 'a', encoding="utf-8") as names_and_messages_file:
+    with open(names_and_messages_output_file, 'a', encoding="utf-8") as names_and_messages_file:
         names_and_messages_file.write(format_message(message, True) + '\n')
