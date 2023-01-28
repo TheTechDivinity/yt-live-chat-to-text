@@ -1,8 +1,8 @@
 YouTube Live Chat to Text File
 by: Divinity
---------------------------------------------------------------------------
-Description and Credits
 
+Description and Credits
+--------------------------------------------------------------------------
 This project reads YouTube live stream messages and stores them in 2
 .txt files inside "outputs/name-message/" or "outputs/message-only/"
 The first contains all the messages, and the latter contains all the
@@ -16,9 +16,9 @@ Chat Downloader: https://github.com/xenova/chat-downloader
   
 Codeium: https://www.codeium.com/
   (Codeium made this way easier to code)
---------------------------------------------------------------------------
+  
 How to run:
-
+--------------------------------------------------------------------------
 There's 2 ways to run this script:
 you can run it through the .bat file, which is more
 convenient or you can run it through your own Python IDE
