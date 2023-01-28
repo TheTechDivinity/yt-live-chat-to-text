@@ -31,13 +31,15 @@ message_only_output_file = 'outputs/message-only/message-only+' + output_file_na
 print(' Name & Message Output File: ' + name_message_output_file)
 print(' Message Only Output File: ' + message_only_output_file)
 
-def format_message(message_dictionary, add_name): #FORMAT: <author>:   <message>
+
+def format_message(message_dictionary, add_name):  # FORMAT: <author>:   <message>
     formatted_message_string = message_dictionary['message']
 
     if add_name:
         author = message_dictionary['author']
         formatted_message_string = author['name'] + ':   ' + formatted_message_string
     return formatted_message_string
+
 
 print(' Messages: \n')
 for message in chat:
