@@ -9,9 +9,13 @@ The first contains all the messages, and the latter contains all the
 messages and the author's names.
 FORMAT: <author>:   <message> or <message> (Oldest to Latest)
 
+  
 -Credits to:
 Chat Downloader: https://github.com/xenova/chat-downloader
-Codeium: https://www.codeium.com/ (this program made this way easier to code)
+  (Library needed for this to work)
+  
+Codeium: https://www.codeium.com/
+  (Codeium made this way easier to code)
 --------------------------------------------------------------------------
 How to run:
 
