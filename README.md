@@ -50,6 +50,7 @@ copy the livestream's watch ID and search for it with that.
 
 To quit the program simply close or terminate it, don't worry as
 the text file is already saved.
+  
 --------------------------------------------------------------------------
 Also, this project is licensed under the MIT license so feel free
 to use it on an AI chatbot or whatever you want.
