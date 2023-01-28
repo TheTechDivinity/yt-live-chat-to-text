@@ -7,7 +7,7 @@ This project reads YouTube live stream messages and stores them in 2
 .txt files inside "outputs/name-message/" or "outputs/message-only/"
 The first contains all the messages, and the latter contains all the
 messages and the author's names.
-FORMAT: <author>:   <message> or <message> (Oldest to Latest)
+FORMAT: (author):   (message) or (message) [Oldest to Latest]
 
   
 -Credits to:
