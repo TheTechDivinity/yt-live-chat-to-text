@@ -4,4 +4,3 @@ set PYTHON="PATH\python.exe"
 
 %PYTHON% main.py %*
 pause
-exit /b
