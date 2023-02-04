@@ -23,11 +23,24 @@ url = input('   Enter the YouTube URL: ')
 print('')
 chat = ChatDownloader().get_chat(url)
 
-output_file_name = url.replace('https://www.youtube.com/watch?v=', '') + '+' + str(randint(-999999, 999999)) + '.txt'
+output_file_name = input('   Enter the name of the output file: ')
 
-names_and_messages_output_file = 'outputs/name-message/name-message+' + output_file_name
-message_only_output_file = 'outputs/message-only/message-only+' + output_file_name
+if output_file_name == '':
+    output_file_name = url.replace('https://www.youtube.com/watch?v=', '') + '+' + str(randint(-999999, 999999))
 
+names_and_messages_path = input('   Enter the path to the names and messages file: ')
+if names_and_messages_path == '':
+    names_and_messages_output_file = 'outputs/name-message/name-message+' + output_file_name + '.txt'
+else:
+    names_and_messages_output_file = names_and_messages_path + '/name-message+' + output_file_name + '.txt'
+
+message_only_path = input('   Enter the path to the message only file: ')
+if message_only_path == '':
+    message_only_output_file = 'outputs/message-only/message-only+' + output_file_name + '.txt'
+else:
+    message_only_output_file = message_only_path + '/message-only+' + output_file_name + '.txt'
+
+print('')
 print(' Name & Message Output File: ' + names_and_messages_output_file)
 print(' Message Only Output File: ' + message_only_output_file)
 
@@ -41,6 +54,7 @@ def format_message(message_dictionary, add_name):  # FORMAT: <author>:   <messag
     return formatted_message_string
 
 
+# Note CMD only supports ASCII characters, so it'll display non-ASCII characters as "?"
 print('\n Messages:')
 for message in chat:
     chat.print_formatted(message)
