@@ -4,12 +4,10 @@ by: Divinity
 Description and Credits
 --------------------------------------------------------------------------
 This project reads YouTube live stream messages and stores them in 2
-.txt files inside "outputs/name-message/" or "outputs/message-only/"
-The first contains all the messages, and the latter contains all the
+.txt files. One contains all the messages, and the latter contains all the
 messages and the author's names.
 FORMAT: (author):   (message) or (message) [Oldest to Latest]
 
-  
 -Credits to:
 Chat Downloader: https://github.com/xenova/chat-downloader
   (Library needed for this to work)
@@ -42,11 +40,10 @@ After the script starts running just paste the URL to the livestream
 and let the program run. It'll automatically download each message
 into their respective .txt files, updating every few seconds.
 
-All of the outputs from this program are stored on the "outputs" folder
+All of the outputs from this program are by default stored on the "outputs" folder
 under the name <type>+<YouTube Watch ID>+<Random 6 digit number>.
-
-So as a tip, if you wanna find a file from a specific livestream
-copy the livestream's watch ID and search for it with that.
+However you can change this when running the program alteratively just press
+enter to use the default names and paths.
 
 To quit the program simply close or terminate it, don't worry as
 the text file is already saved.
